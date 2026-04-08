@@ -1,0 +1,55 @@
+:root {
+	--color-bg: #f8f9fc;
+	--color-surface: #ffffff;
+	--color-surface-alt: #f4f6fb;
+	--color-white: #ffffff;
+	--color-white-rgb: 255 255 255;
+	--color-black: #000000;
+	--color-black-rgb: 0 0 0;
+	--color-text: #1e212c;
+	--color-muted: #787a80;
+	--color-primary: #7772f1;
+	--color-primary-dark: #5f5ad4;
+	--color-secondary: #1e212c;
+	--color-secondary-dark: #151820;
+	--color-border: #d7dadd;
+	--color-line: #e8eaed;
+	--color-success: #03cea4;
+	--color-danger: #ff4242;
+	--color-warning: #f9b115;
+	--color-hero-glow: #e8e7fc;
+	--color-deep: #0f172a;
+	--color-footer-bg: #1e212c;
+	--color-footer-text: #ffffff;
+	--color-footer-copy: rgba(255, 255, 255, 0.72);
+	--color-footer-social-border: rgba(255, 255, 255, 0.16);
+	--color-footer-link: rgba(255, 255, 255, 0.88);
+	--color-footer-input-border: rgba(255, 255, 255, 0.2);
+	--color-footer-input-bg: rgba(255, 255, 255, 0.08);
+	--color-footer-placeholder: rgba(255, 255, 255, 0.58);
+	--color-reset-fieldset: #c0c0c0;
+	--color-reset-text: #222222;
+	--color-reset-selection: #b3d4fc;
+	--color-reset-chromeframe-bg: #cccccc;
+	--font-body: "Lato", sans-serif;
+	--font-heading: "Ubuntu", sans-serif;
+	--container-max: 1240px;
+	--container-gutter: 48px;
+	--radius-lg: 32px;
+	--radius-md: 20px;
+	--radius-sm: 14px;
+	--shadow-soft: 0 24px 64px rgba(30, 33, 44, 0.08);
+	--shadow-card: 0 18px 40px rgba(30, 33, 44, 0.1);
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--container-gutter: 36px;
+	}
+}
+
+@media (max-width: 640px) {
+	:root {
+		--container-gutter: 24px;
+	}
+}

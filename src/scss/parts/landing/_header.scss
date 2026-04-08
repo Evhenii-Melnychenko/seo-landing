@@ -1,0 +1,236 @@
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  padding: 20px 0;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.site-header__brand,
+.site-footer__brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.site-header__brand span,
+.site-footer__brand span {
+  color: var(--color-primary);
+}
+
+.site-header__menu {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.site-header__link,
+.site-footer__item,
+.site-footer__bottom a,
+.cases__link,
+.hero__video-link,
+.services__tool-link {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-header__link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.site-header__link::before,
+.site-header__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  right: 0;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.site-header__link::before {
+  transform-origin: left;
+}
+
+.site-header__link::after {
+  transform-origin: right;
+}
+
+.site-header__link:hover {
+  color: #fff;
+}
+
+.site-header__link:hover::before,
+.site-header__link:hover::after {
+  transform: scaleX(1);
+}
+
+.site-header__link:hover,
+.site-footer__item:hover,
+.site-footer__bottom a:hover,
+.cases__link:hover,
+.hero__video-link:hover,
+.services__tool-link:hover {
+  color: var(--color-primary);
+}
+
+.site-header__toggle {
+  display: none;
+  margin-left: auto;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+}
+
+.site-header__toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 5px auto;
+  border-radius: 999px;
+  background: var(--color-white);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.site-header__backdrop {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .site-header {
+    z-index: 40;
+  }
+
+  .site-header__container {
+    position: relative;
+  }
+
+  .site-header__toggle {
+    display: inline-block;
+    position: relative;
+    z-index: 52;
+  }
+
+  .site-header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(60vw, 380px);
+    display: grid;
+    align-content: start;
+    gap: 28px;
+    padding: 96px 40px 34px;
+    background: #1e212c;
+    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.42);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(calc(-100% - 32px));
+    transition: transform 0.32s ease, opacity 0.2s ease, visibility 0.2s ease;
+    z-index: 51;
+    overflow-y: auto;
+  }
+
+  .site-header--open .site-header__menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  .site-header__nav {
+    display: grid;
+    gap: 18px;
+    justify-items: start;
+  }
+
+  .site-header__link,
+  .site-header__phone {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .site-header__link:hover,
+  .site-header__phone:hover {
+    color: var(--color-white);
+  }
+
+  .site-header__cta {
+    justify-self: start;
+    min-height: 50px;
+    padding: 0 22px;
+  }
+
+  .site-header__backdrop {
+    position: fixed;
+    inset: 0;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: rgba(15, 23, 42, 0.42);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.28s ease, visibility 0.28s ease;
+    z-index: 50;
+  }
+
+  .site-header--open .site-header__backdrop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .site-header--open .site-header__toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .site-header--open .site-header__toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .site-header--open .site-header__toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .site-header--open .site-header__toggle span {
+    background: var(--color-white);
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header__menu {
+    width: 100vw;
+    height: 100vh;
+    padding: 88px 28px 30px;
+  }
+}

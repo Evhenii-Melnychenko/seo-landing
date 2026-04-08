@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', {
+    "title": "Createx SEO"
+  })
+<body>
+
+<div class="wrapper">
+  @@include('html/header.html', {})
+
+  <main class="page-main">
+    @@include('html/hero.html', {})
+    @@include('html/partners.html', {})
+    @@include('html/about.html', {})
+    @@include('html/figures.html', {})
+    @@include('html/services.html', {})
+    @@include('html/analysis.html', {})
+    @@include('html/faq.html', {})
+    @@include('html/cases.html', {})
+    @@include('html/benefits.html', {})
+    @@include('html/pricing.html', {})
+    @@include('html/testimonials.html', {})
+    @@include('html/news.html', {})
+  </main>
+
+  @@include('html/footer.html', {})
+
+  <button class="btn-up btn-up_hidden" aria-label="Go top">
+    <svg class="btn-up__img"><use href="img/footer/sprite.svg#triangle-stroke"></use></svg>
+  </button>
+</div>
+
+ <script src="js/app.min.js"></script>
+</body>
+</html>
