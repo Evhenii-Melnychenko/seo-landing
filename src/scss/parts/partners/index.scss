@@ -1,17 +1,17 @@
 .partners {
-  padding: 10px 0 46px;
+  padding: 0.625rem 0 2.875rem;
 }
 
 .partners__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .partners__label {
   margin: 0;
-  font-size: 22px;
+  font-size: 1.375rem;
   color: var(--color-partners-title);
   font-family: var(--font-heading);
 }
@@ -20,13 +20,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px 26px;
+  gap: 1.125rem 1.625rem;
 }
 
 .partners__item {
   padding: 0;
   border: none;
-  font-size: 22px;
+  font-size: 1.375rem;
   color: var(--color-partners-item);
   font-weight: 600;
 }
@@ -35,13 +35,13 @@
   color: var(--color-brand-orange);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
   .partners__label {
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: center;
   }
 
   .partners__item {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }

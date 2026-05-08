@@ -12,7 +12,7 @@ body {
   font-family: var(--font-body);
   color: var(--color-text);
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .wrapper {
@@ -45,10 +45,10 @@ img {
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.0625rem;
+  height: 0.0625rem;
   padding: 0;
-  margin: -1px;
+  margin: -0.0625rem;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
@@ -63,19 +63,19 @@ img {
 }
 
 .reveal--from-left {
-  transform: translate3d(-44px, 0, 0);
+  transform: translate3d(-2.75rem, 0, 0);
 }
 
 .reveal--from-right {
-  transform: translate3d(44px, 0, 0);
+  transform: translate3d(2.75rem, 0, 0);
 }
 
 .reveal--from-bottom {
-  transform: translate3d(0, 36px, 0);
+  transform: translate3d(0, 2.25rem, 0);
 }
 
 .reveal--from-top {
-  transform: translate3d(0, -28px, 0);
+  transform: translate3d(0, -1.75rem, 0);
 }
 
 .reveal--zoom {
@@ -87,16 +87,16 @@ img {
   transform: translate3d(0, 0, 0) scale(1);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.9375rem) {
   .reveal--from-left,
   .reveal--from-right,
   .reveal--from-top,
   .reveal--zoom {
-    transform: translate3d(0, 26px, 0);
+    transform: translate3d(0, 1.625rem, 0);
   }
 
   .reveal--from-bottom {
-    transform: translate3d(0, 26px, 0);
+    transform: translate3d(0, 1.625rem, 0);
   }
 }
 

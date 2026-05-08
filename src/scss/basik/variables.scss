@@ -33,23 +33,23 @@
 	--color-reset-chromeframe-bg: #cccccc;
 	--font-body: "Lato", sans-serif;
 	--font-heading: "Ubuntu", sans-serif;
-	--container-max: 1240px;
-	--container-gutter: 48px;
-	--radius-lg: 32px;
-	--radius-md: 20px;
-	--radius-sm: 14px;
-	--shadow-soft: 0 24px 64px rgba(30, 33, 44, 0.08);
-	--shadow-card: 0 18px 40px rgba(30, 33, 44, 0.1);
+	--container-max: 77.5rem;
+	--container-gutter: 3rem;
+	--radius-lg: 2rem;
+	--radius-md: 1.25rem;
+	--radius-sm: 0.875rem;
+	--shadow-soft: 0 1.5rem 4rem rgba(30, 33, 44, 0.08);
+	--shadow-card: 0 1.125rem 2.5rem rgba(30, 33, 44, 0.1);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
 	:root {
-		--container-gutter: 36px;
+		--container-gutter: 2.25rem;
 	}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
 	:root {
-		--container-gutter: 24px;
+		--container-gutter: 1.5rem;
 	}
 }

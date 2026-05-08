@@ -10,9 +10,9 @@
   top: 50%;
   left: 50%;
   width: 100%;
-  max-width: 375px;
+  max-width: 23.4375rem;
   height: 100%;
-  max-height: 505px;
+  max-height: 31.5625rem;
   transform: translate(-50%, -50%);
   background: url("../img/benefits/illustration.svg") center / contain no-repeat;
   pointer-events: none;
@@ -27,12 +27,12 @@
 
 .benefits .section-heading {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .benefits__grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .benefit-card {
@@ -41,23 +41,23 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 390px;
-  height: 238px;
-  padding: 10px;
+  max-width: 24.375rem;
+  height: 14.875rem;
+  padding: 0.625rem;
   text-align: center;
   background: var(--color-white);
   border: none;
-  border-radius: 4px;
-  box-shadow: inset 0 0 4px 0 #e5e8ed;
+  border-radius: 0.25rem;
+  box-shadow: inset 0 0 0.25rem 0 #e5e8ed;
   transition: box-shadow 0.3s ease;
 }
 
 .benefit-card::before {
   content: "";
   display: block;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 16px;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -71,26 +71,26 @@
 .benefit-card:nth-child(6)::before { background-image: url("../img/benefits/icon__like.svg"); }
 
 .benefit-card:hover {
-  box-shadow: inset 0 0 20px #e5e8ed;
+  box-shadow: inset 0 0 1.25rem #e5e8ed;
 }
 
 .benefit-card h3 {
-  margin: 0 0 8px;
-  font-size: 20px;
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
 }
 
 .benefit-card p {
   margin: 0;
-  max-width: 340px;
+  max-width: 21.25rem;
 }
 
-@media (min-width: 721px) {
+@media (min-width: 45.0625rem) {
   .benefit-card:nth-child(even) {
     justify-self: end;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 45rem) {
   .benefit-card {
     max-width: 100%;
   }
@@ -101,6 +101,6 @@
 
   .benefits__grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 1rem;
   }
 }

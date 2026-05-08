@@ -1,31 +1,31 @@
 .subscribe {
-  padding: 8px 0 56px;
+  padding: 0.5rem 0 3.5rem;
 }
 
 .subscribe__container {
   background: var(--color-subscribe-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 2px;
-  padding: clamp(24px, 4vw, 38px);
+  border: 0.0625rem solid var(--color-border);
+  border-radius: 0.125rem;
+  padding: clamp(1.5rem, 4vw, 2.375rem);
   text-align: center;
 }
 
 .subscribe__title {
   margin: 0;
-  font-size: clamp(30px, 3.6vw, 42px);
+  font-size: clamp(1.875rem, 3.6vw, 2.625rem);
   color: var(--color-title-strong);
 }
 
 .subscribe__text {
-  margin: 8px auto 0;
+  margin: 0.5rem auto 0;
   max-width: 46ch;
   color: var(--color-muted);
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .subscribe__form {
-  margin: 16px auto 0;
-  max-width: 420px;
+  margin: 1rem auto 0;
+  max-width: 26.25rem;
   display: flex;
   gap: 0;
 }
@@ -33,8 +33,8 @@
 .subscribe__form input,
 .subscribe__form button {
   border-radius: 0;
-  border: 1px solid var(--color-border);
-  padding: 10px 12px;
+  border: 0.0625rem solid var(--color-border);
+  padding: 0.625rem 0.75rem;
   font: inherit;
 }
 
@@ -47,11 +47,11 @@
   border-color: var(--color-primary);
   color: var(--color-white);
   font-weight: 600;
-  font-size: 12px;
-  min-width: 92px;
+  font-size: 0.75rem;
+  min-width: 5.75rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
   .subscribe__form {
     flex-direction: column;
   }
